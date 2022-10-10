@@ -29,7 +29,7 @@ namespace TrilhaApiDesafio.Controllers
             if(tarefa == null)
                 return NotFound(new { Error = "Nenhuma tarefa foi encontrada" });
 
-            return Ok();
+            return Ok(tarefa);
         }
 
         [HttpGet("ObterTodos")]
